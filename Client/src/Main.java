@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
       //  System.out.println("Hello World!");
         /*初始化*/
-               URL url = new java.net.URL("http://localhost:8080/ADSer/ServletHandle");
+               URL url = new java.net.URL("http://106.15.228.222:8080/ADSer/ServletHandle");
             /* URL url = new java.net.URL("http://localhost:8080/ServiceTest/MeeServlet");*/
                 URLConnection con = url.openConnection();
 
