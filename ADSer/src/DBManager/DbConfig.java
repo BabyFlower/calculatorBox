@@ -46,9 +46,10 @@ public class DbConfig {
         String path=null;
         FileInputStream fis=null;
         try {
-            path = DbConfig.class.getClassLoader().getResource("").toURI().getPath();
+            path = DbConfig.class.getClassLoader().getResource("").toURI().getPath();//src***
+            //path = DbConfig.class.getResource("").toURI().getPath();//DBManager*****
             System.out.println(path+"here");
-            fis = new FileInputStream(new File(path + ACTIONPATH));
+          fis = new FileInputStream(new File(path + ACTIONPATH));
             prop.load(fis);
             dc.db_username=prop.getProperty("db_username");
             dc.db_password=prop.getProperty("db_password");

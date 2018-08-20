@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="maximumHeapSize" value="2048" />
+    <option name="vmParameters" value="-Xms512m -Xmx512m -XX:MaxNewSize=512m -XX:MaxPermSize=512m" />
+  </component>
+</project>

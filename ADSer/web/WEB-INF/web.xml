@@ -25,6 +25,7 @@
         </init-param>
         <load-on-startup>100</load-on-startup>
     </servlet>
+
     <servlet>
         <servlet-name>ServletHandle</servlet-name>
         <servlet-class>Main.ServletHandle</servlet-class>
@@ -33,6 +34,16 @@
     <servlet-mapping>
         <servlet-name>ServletHandle</servlet-name>
         <url-pattern>/ServletHandle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletDB</servlet-name>
+        <servlet-class>Main.ServletHandle</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDB</servlet-name>
+        <url-pattern>/ServletDB</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>HelloWorld</servlet-name>

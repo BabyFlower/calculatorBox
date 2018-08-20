@@ -9,8 +9,8 @@
       <root url="jar://$PROJECT_DIR$/lib/saaj.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/axis.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/dom4j-1.6.1.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/ojdbc6.jar!/" />
+      <root url="jar://H:/javaCommonJar/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ojdbc14.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

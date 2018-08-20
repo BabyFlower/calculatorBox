@@ -51,17 +51,20 @@ public static Connection getConnection() throws SQLException {
      65 */
     public static void closeConnection() throws SQLException{
         Connection conn = currentConnection.get();
-        conn.close();
-        currentConnection.set(null);
+        if(!(conn==null)) {
+            conn.close();}
+            currentConnection.set(null);
+
     }
 
     //获得Oracle数据库连接
     private static Connection getOracleConnection(){
-        initParams();
+       initParams();
         Connection conn = null;
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver").newInstance();    //加载驱动
-            conn= DriverManager.getConnection("jdbc:oracle:thin:@"+ip+":1521:"+dbName,username,password);
+            //    conn= DriverManager.getConnection("jdbc:oracle:thin:@"+"localhost"+":1521:"+"orcl","admin","admin");
+             conn= DriverManager.getConnection("jdbc:oracle:thin:@"+ip+":1521:"+dbName,username,password);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             System.out.println("Oracle驱动没找到");
